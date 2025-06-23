@@ -1,0 +1,220 @@
+.box{
+    height: 170px;
+    border: 3px  black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+header h1{
+    font-size: 2.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+header h1, a{
+    color: #00e0ff;
+    transition: 0.2s ease-in-out;
+}
+/***********************************código vídeos*****************************/
+.video{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;/*linhas*/
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+/*deixar vídeos lado a lado, espaço que o video ficara*/
+ .video-item{
+    width: 30%;
+    height: auto;
+ }
+ /*ajustar video*/
+ .videobox{
+    width: 100%;
+    height: auto;
+ }
+/*legenda*/
+ .textodescri{
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+ }
+ /****************************fim-rodapé************/
+ .rodape {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/******************parte de cima topo*******************/
+.topo {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.topo nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topo nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*************código das imagens******************/
+.galeria{
+    display: flex;/*flexivel, permitindo que os elementos(article) se ajustam automaticamente*/
+    flex-wrap: wrap;/* article quebrem para a proxima linha*/
+    justify-content: space-between/*espaçamento entre article*/;
+    border: 1px black;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    
+}
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+article {
+    padding: 10px;
+    width: calc(33.333% - 20px); /* 3 por linha */
+    box-sizing: border-box;
+    
+}
+
+article img {
+    width: 400px;
+    height: 300px;
+    display: block;
+}
+
+aside {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    article {
+        width: calc(50% - 20px); /* 2 por linha no tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        width: 100%; /* 1 por linha no celular */
+    }
+}
+
+
+.borda{
+   
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra leve */
+    padding: 20px; /* aumenta o espaço interno */
+    
+}
+.borda1{
+   border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra leve */
+    padding: 20px; /* aumenta o espaço interno */
+    
+}
+
+
+
+
+
+.janelaModal{
+    position: fixed;/*posição fixa*/
+    top: 0px; /* Alinha ao topo */
+    left: 0px; /* Alinha à esquerda */
+    width: 100%;/*largura*/
+    height: 100%;/*altura*/
+    overflow: hidden;
+    padding-top: 200px; /* Adiciona um preenchimento de 200px no topo do elemento, empurrando seu conteúdo para baixo */
+    z-index: 99999;/*define a ordem empilhada do elemento em relação */
+    background-color:rgba(0, 0,0, 0.8);
+}
+
+/*janela exibida ou não*/
+.mostraJanelaModal{
+    display: block;
+}
+/*retraiu*/
+.escondeJanelaModal{
+    display: none;
+}
+
+.fecharModal{
+position: absolute;/* Posiciona em relação ao contêiner */
+top: 15px;/* Distância de 15px do topo do contêiner */
+right:35px ;/*espaçamento na direita*/
+color: aliceblue;
+font-weight: bold; /* Torna o texto em negrito */
+font-size: 48px; /* Tamanho da fonte */
+font-family: Arial, Helvetica, sans-serif; /* Fontes */
+cursor: pointer; /* Cursor de clique */
+}
+
+.imgModal{
+margin: auto;/*margin*/
+display: block;
+width: 30%;/*largura*/
+max-width: 500px;/*não pode passar disso*/
+}
+/*alt*/
+.txtModal{
+margin: auto;
+margin-top: 20px; /* Espaço no topo */
+display: block;/* Elemento em bloco */
+width: 80%;
+text-align: center; /* Alinha o texto ao centro */
+color: azure;
+position: 10px 0px;
+height: 150px;
+font-family: 'Courier New', Courier, monospace;/*fonte*/
+font-size: 20px; /* Tamanho da fonte */
+}
+
+footer span{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+header{
+    background-color: #004080;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*todos os elementos serão colocados na sua extremidade*/
+}
+
+
+    
